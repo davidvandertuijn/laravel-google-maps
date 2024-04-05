@@ -1,0 +1,37 @@
+{
+    "name": "davidvandertuijn/laravel-google-maps",
+    "description": "Laravel Google Maps",
+    "license": "MIT",
+    "homepage": "https://github.com/davidvandertuijn/laravel-google-maps",
+    "support": {
+        "issues": "https://github.com/davidvandertuijn/laravel-google-maps/issues",
+        "source": "https://github.com/davidvandertuijn/laravel-google-maps"
+    },
+    "authors": [
+        {
+            "name": "David van der Tuijn",
+            "email": "davidvandertuijn@mac.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Davidvandertuijn\\LaravelGoogleMaps\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Davidvandertuijn\\LaravelGoogleMaps\\MapperServiceProvider"
+            ],
+            "aliases": {
+                "Mapper": "Davidvandertuijn\\LaravelGoogleMaps\\Facades\\MapperFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
