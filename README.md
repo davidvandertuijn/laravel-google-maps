@@ -4,6 +4,8 @@
 <a href="https://packagist.org/packages/davidvandertuijn/laravel-google-maps"><img src="https://poser.pugx.org/davidvandertuijn/laravel-google-maps/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/davidvandertuijn/laravel-google-maps"><img src="https://poser.pugx.org/davidvandertuijn/laravel-google-maps/license.svg" alt="License"></a>
 
+ ![Laravel Google Maps](https://cdn.davidvandertuijn.nl/github/laravel-google-maps.png)
+ 
 | Laravel | Version |
 | --- |---------|
 | 11  | v1.0    |
