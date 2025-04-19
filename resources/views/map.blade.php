@@ -15,14 +15,14 @@
             @endif
             zoom: {!! $options['zoom'] !!},
             mapTypeId: google.maps.MapTypeId.{!! $options['type'] !!},
-            disableDefaultUI: @if (!$options['ui']) true @else false @endif,
-            scrollwheel: @if ($options['scrollWheelZoom']) true @else false @endif,
-            zoomControl: @if ($options['zoomControl']) true @else false @endif,
-            mapTypeControl: @if ($options['mapTypeControl']) true @else false @endif,
-            scaleControl: @if ($options['scaleControl']) true @else false @endif,
-            streetViewControl: @if ($options['streetViewControl']) true @else false @endif,
-            rotateControl: @if ($options['rotateControl']) true @else false @endif,
-            fullscreenControl: @if ($options['fullscreenControl']) true @else false @endif,
+            @if (!$options['ui']) disableDefaultUI: true @else disableDefaultUI: false @endif,
+            @if ($options['scrollWheelZoom']) scrollwheel: true @else scrollwheel: false @endif,
+            @if ($options['zoomControl']) zoomControl: true @else zoomControl: false @endif,
+            @if ($options['mapTypeControl']) mapTypeControl: true @else mapTypeControl: false @endif,
+            @if ($options['scaleControl']) scaleControl: true @else scaleControl: false @endif,
+            @if ($options['streetViewControl']) streetViewControl: true @else streetViewControl: false @endif,
+            @if ($options['rotateControl']) rotateControl: true @else rotateControl: false @endif,
+            @if ($options['fullscreenControl']) fullscreenControl: true @else fullscreenControl: false @endif,
             gestureHandling: '{!! $options['gestureHandling'] !!}'
         };
 
