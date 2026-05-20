@@ -6,12 +6,24 @@
 
         <script type="text/javascript">
 
-            var initialize_items = [];
+            var initialize_ready = false;
+
+            var initialize_items = {
+                queue: [],
+                push: function (item) {
+                    if (initialize_ready) {
+                        item.method();
+                    } else {
+                        this.queue.push(item);
+                    }
+                }
+            };
 
             function initialize_method() {
-                initialize_items.forEach(function(item) {
-                    item.method();
-                });
+                initialize_ready = true;
+                while (initialize_items.queue.length) {
+                    initialize_items.queue.shift().method();
+                }
             }
 
         </script>
